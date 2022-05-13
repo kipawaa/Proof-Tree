@@ -1,0 +1,2 @@
+# Proof Tree
+The idea for proof tree is to create a wiki-style database of math/logic proofs with clear dependencies, showing the structure of modern mathematics. Since some theorems are important in many different subfields, and can be proven from each of these, pages for a given theorem may include multiple proofs. Each proof will be clearly written and explanation will be available to make the field more accessible.
