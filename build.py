@@ -1,6 +1,9 @@
 import os
 import subprocess
 
+# keep track of roots
+roots = []
+
 # set directory
 directory = "./articles"
 

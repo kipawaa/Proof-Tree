@@ -19,18 +19,23 @@ body {
 
 .prooftree {
         margin: 0;
+        margin-right: 10px;
         font-size: 24px;
-        width: 200px;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+        font-weight: bold;
 }
 
 .title {
         margin-left: 10px;
+        margin-right: 10px;
         font-size: 18px;
 }
 
 .searchbar {
-        margin-left: 0px;
-        width: 50%;
+        margin-left: 10px;
+        width: 30%;
         font-family: Arial, sans-serif;
 }
 
@@ -42,16 +47,14 @@ body {
 
 .sidebar {
         background-color: #222;
-        width: 200px;
         height: 100%;
         overflow-y: auto;
 }
 
 .sidebarTitle {
         color: #83abeb;
-        margin-top: 18px;
-        margin-bottom: 10px;
-        margin-left: 18px;
+        margin: 5px;
+        padding: 0px;
 }
 
 .tab {
