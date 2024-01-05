@@ -1,0 +1,49 @@
+/**
+ * Vector modern stylesheets
+ * See '../common/common.less' for common screen and print Vector stylesheets.
+ */
+
+@import '../common/variables.less';
+@import 'mediawiki.mixins.less';
+
+@media screen {
+	// Layouts
+	@import './layouts/screen.less';
+
+	// Components
+	@import './components/SearchBoxLoader.less';
+	@import './components/VueEnhancedSearchBox.less';
+	@import './components/LanguageDropdown.less';
+	@import './components/UserLinks.less';
+	@import './components/Header.less';
+	@import './components/Footer.less';
+	@import './components/Menu.less';
+	@import './components/Dropdown.less';
+	@import './components/MenuTabs.less';
+	@import './components/MainMenu.less';
+	@import './components/MainMenuGroup.less';
+	@import './components/PageTitlebar.less';
+	@import './components/PageToolbar.less';
+	@import './components/PageTools.less';
+	@import './components/PinnableHeader.less';
+	@import './components/PinnableElement.less';
+	@import './components/StickyHeader.less';
+	@import './components/TabWatchstarLink.less';
+	@import './components/TableOfContents.less';
+	@import './components/Icon.less';
+
+	.vector-feature-page-tools-disabled {
+		@import './components/checkboxHack.less';
+	}
+}
+
+@media all {
+	// Component styles that should apply in all media.
+	@import './components/Logo.less';
+}
+
+@media print {
+	@import './layouts/print.less';
+}
+
+@import './layouts/gradeC.less';
