@@ -1,0 +1,22 @@
+TITLE
+Triangle Inequality
+
+STATEMENT
+$\lvert x + y \rvert \leq \lvert x \rvert + \lvert y \rvert$
+
+EXPLANATION
+The absolute value of a sum is less than or equal to the sum of the absolute values
+
+HISTORY
+this was proven at some point in time
+
+APPLICATIONS
+very useful in all metric spaces
+
+LINKS
+
+SOURCES
+TODO
+
+PROOFS
+TODO
