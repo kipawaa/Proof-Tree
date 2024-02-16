@@ -2,6 +2,7 @@ from identify_stubs import *
 from update_links import *
 
 import os
+from tqdm import tqdm
 
 wiki_directory = "../Proof-Tree.wiki/"
 
@@ -23,7 +24,7 @@ def main():
         missing_article.write(content)
 
     # loop over all files in directory
-    for file in os.listdir('../Proof-Tree.wiki/'):
+    for file in tqdm(os.listdir('../Proof-Tree.wiki/'), desc="Updating Links"):
         # get filename
         article_name = os.fsdecode(file)
 
