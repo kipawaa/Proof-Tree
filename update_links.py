@@ -56,7 +56,6 @@ def update_article_links(article_name, article_sections):
         # now update dependencies to list this article as a dependent
         for link in links:
             # get the filename for the linked file
-            #linked_article_name = link.strip('[]').replace(' ', '-') + '.md'
             linked_article_name = link_to_name(link)
             print(f"{article_name} links {linked_article_name}")
             
@@ -67,9 +66,7 @@ def update_article_links(article_name, article_sections):
                 linked_article_sections = get_sections(linked_article_content)
 
                 # update the dependents links
-                #if article_name.rstrip('.md').replace('-', ' ') not in linked_article_sections[LINKS]:
                 if name_to_link(article_name) not in linked_article_sections[LINKS]:
-                    #linked_article_sections[LINKS] += '- [[' + article_name.rstrip('.md').replace('-', ' ')+ ']]\n'
                     linked_article_sections[LINKS] += '- ' + name_to_link(article_name) + '\n'
                 
                 # write to the file
@@ -77,5 +74,4 @@ def update_article_links(article_name, article_sections):
                    linked_article.write('\n## '.join(linked_article_sections))
             except:
                 with open(wiki_directory + "Missing-Articles.md", "a") as missing_article:
-                    #missing_article.write('\n- [[' + article_name.rstrip('.md').replace('-', ' ')+ ']]')
                     missing_article.write('\n- ' + name_to_link(article_name))
