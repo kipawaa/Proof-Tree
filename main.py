@@ -27,7 +27,7 @@ def main():
 
     # loop over all files in directory
     print("updating links")
-    for file in tqdm(os.listdir('../Proof-Tree.wiki/'), desc="Updating Links"):
+    for file in tqdm(os.listdir(wiki_directory), desc="Updating Links"):
         # get filename
         article_name = os.fsdecode(file)
 

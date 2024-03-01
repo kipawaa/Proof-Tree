@@ -21,7 +21,7 @@ wiki_directory = "../Proof-Tree.wiki/"
 
 
 def update_article_links(article_name, article_sections):
-        print(f"\nupdating {article_name}")
+        print(f"updating {article_name}")
         
         # get links from the main sections
         links = []
@@ -57,7 +57,6 @@ def update_article_links(article_name, article_sections):
         for link in links:
             # get the filename for the linked file
             linked_article_name = link_to_name(link)
-            print(f"{article_name} links {linked_article_name}")
             
             try:
                 # get the sections from the linked file
@@ -73,5 +72,6 @@ def update_article_links(article_name, article_sections):
                 with open(wiki_directory + linked_article_name, 'w') as linked_article:
                    linked_article.write('\n## '.join(linked_article_sections))
             except:
+                print(f"{linked_article_name} is missing")
                 with open(wiki_directory + "Missing-Articles.md", "a") as missing_article:
-                    missing_article.write('\n- ' + name_to_link(article_name))
+                    missing_article.write('\n- ' name_to_link(article_name) + ' links ' + name_to_link(linked_article_name))
