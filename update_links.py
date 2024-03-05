@@ -74,4 +74,4 @@ def update_article_links(article_name, article_sections):
             except:
                 print(f"{linked_article_name} is missing")
                 with open(wiki_directory + "Missing-Articles.md", "a") as missing_article:
-                    missing_article.write('\n- ' name_to_link(article_name) + ' links ' + name_to_link(linked_article_name))
+                    missing_article.write('\n- ' + name_to_link(article_name) + ' links ' + name_to_link(linked_article_name))
