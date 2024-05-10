@@ -13,6 +13,7 @@ IGNORE_LIST = [
     "Upcoming-Features.md",
     "Missing-Articles.md",
     "Roots.md",
+    "Incomplete-Articles.md",
     "_Footer.md",
     "_Sidebar.md"
 ]

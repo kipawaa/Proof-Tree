@@ -1,4 +1,4 @@
-from identify_stubs import *
+from identify_article_features import *
 from update_links import *
 
 import os
@@ -25,6 +25,14 @@ def main():
     with open(wiki_directory + "Missing-Articles.md", 'w') as missing_article:
         missing_article.write(content)
 
+    # clear the incomplete-articles page
+    with open(wiki_directory + "Incomplete-Articles.md") as incomplete_article:
+        content = incomplete_article.read()
+        content = content[:content.index(":") + 1]
+
+    with open(wiki_directory + "Incomplete-Articles.md", 'w') as incomplete_article:
+        incomplete_article.write(content)
+
     # loop over all files in directory
     print("updating links")
     for file in tqdm(os.listdir(wiki_directory), desc="Updating Links"):
@@ -38,9 +46,15 @@ def main():
             article_sections = get_sections(article_content)
             update_article_links(article_name, article_sections)
 
+            # if this article is a root then add it to the roots article
             if is_root(article_sections):
                 with open(wiki_directory + "Roots.md", "a") as roots_article:
                     roots_article.write('\n- ' + name_to_link(article_name))
+
+            # if this article is missing a source then add it to the incomplete articles list
+            if is_missing_sources(article_sections):
+                with open(wiki_directory + "Incomplete-Articles.md", "a") as incomplete_article:
+                    incomplete_article.write("\n- " + name_to_link(article_name))
 
 
 if __name__ == "__main__":
