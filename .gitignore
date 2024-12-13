@@ -1,3 +1,5 @@
 .DS_Store
 makefile
 __pycache__
+output
+notes.txt

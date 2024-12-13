@@ -1,0 +1,32 @@
+\documentclass{book}
+
+\usepackage{url}
+\usepackage{hyperref}
+
+\title{Proof Tree}
+\author{River McCubbin}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+% generates a table of contents if compiling for latex, not for make4ht, since make4ht handles toc separately
+\ifdefined\HCode\else\tableofcontents\fi
+
+\chapter*{Algebra}
+        \section*{Group Theory}
+                \input{articles/Group.tex}
+
+
+\chapter*{Set Theory}
+        \section*{Topology}
+
+
+\chapter*{Analysis}
+        \section*{Real Analysis}
+
+
+\chapter*{Geometry}
+        
+
+\end{document}
