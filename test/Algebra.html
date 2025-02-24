@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head><title>1 Algebra</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='index.css' rel='stylesheet' type='text/css' /> 
+<meta content='index.tex' name='src' /> 
+</head><body>
+   <div class='tableofcontents'>
+   <span class='chapterToc'>1 <a href='#algebra'>Algebra</a></span>
+<br />   <span class='sectionToc'>1.1 <a href='#group-theory'>Group Theory</a></span>
+<br />   <span class='chapterToc'>2 <a href='SetTheory.html#set-theory'>Set Theory</a></span>
+<br />   <span class='sectionToc'>2.1 <a href='SetTheory.html#topology'>Topology</a></span>
+<br />   <span class='chapterToc'>3 <a href='Analysis.html#analysis'>Analysis</a></span>
+<br />   <span class='sectionToc'>3.1 <a href='Analysis.html#real-analysis'>Real Analysis</a></span>
+<br />   <span class='chapterToc'>4 <a href='Geometry.html#geometry'>Geometry</a></span>
+   </div><p>[<a href='SetTheory.html'>next</a>] [<a href='#tailAlgebra.html'>tail</a>] [<a href='index.html#Algebra.html'>up</a>] </p><h2 class='chapterHead' id='algebra'><span class='titlemark'>Chapter 1</span><br /><a id='x2-10001'></a>Algebra</h2>
+   <h3 class='sectionHead' id='group-theory'><span class='titlemark'>1.1   </span> <a id='x2-20001.1'></a>Group Theory</h3>
+                                                                  
+
+                                                                  
+   <h4 class='likesubsectionHead' id='group'><a id='x2-3000'></a>Group</h4>
+<p><a id='x2-3000doc'></a>
+</p><!-- l. 3 --><p class='noindent'>A <span class='textit'>group</span> is a set <!-- l. 3 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>G</mi></math>
+with an operation <!-- l. 3 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin' stretchy='false'>⋅</mo></math>
+such that the following properties (often called the <span class='textit'>Axioms of Group Theory</span>)
+hold:
+</p>
+     <ul class='itemize1'>
+     <li class='itemize'>Closure: <!-- l. 6 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>a</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>b</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>G</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>a</mi> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>b</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>G</mi></mrow></math>
+     </li>
+     <li class='itemize'>Associativity: <!-- l. 7 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>a</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>b</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>c</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>G</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>a</mi> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mi>b</mi> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>c</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mi>a</mi> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>b</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>c</mi></mrow></math>
+     </li>
+     <li class='itemize'>Identity: <!-- l. 8 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>e</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>G</mi></mrow></math>
+     such that <!-- l. 8 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>a</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>G</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>a</mi> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>e</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>e</mi> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>a</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>a</mi></mrow></math>
+     </li>
+     <li class='itemize'>Inverse: <!-- l. 9 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>a</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>G</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi class='MathClass-op'>∃</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><msup><mrow><mi>a</mi></mrow><mrow><mo class='MathClass-bin' stretchy='false'>−</mo><mn>1</mn></mrow></msup></mrow></math>
+     such that <!-- l. 9 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>a</mi><msup><mrow><mi>a</mi></mrow><mrow><mo class='MathClass-bin' stretchy='false'>−</mo><mn>1</mn></mrow></msup> <mo class='MathClass-rel' stretchy='false'>=</mo> <msup><mrow><mi>a</mi></mrow><mrow><mo class='MathClass-bin' stretchy='false'>−</mo><mn>1</mn></mrow></msup><mi>a</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>e</mi></mrow></math></li></ul>
+<!-- l. 12 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='explanation'><a id='x2-4000'></a>Explanation</h5>
+<!-- l. 14 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='proofs'><a id='x2-5000'></a>Proof(s)</h5>
+<!-- l. 16 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='history'><a id='x2-6000'></a>History</h5>
+                                                                  
+
+                                                                  
+<!-- l. 18 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='applications'><a id='x2-7000'></a>Applications</h5>
+<!-- l. 20 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='dependencies'><a id='x2-8000'></a>Dependencies</h5>
+<!-- l. 21 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='dependents'><a id='x2-9000'></a>Dependents</h5>
+     <ul class='itemize1'>
+     <li class='itemize'>Group Identity Is Unique
+     </li>
+     <li class='itemize'>Order in a Group
+     </li>
+     <li class='itemize'>Abelian Group
+     </li>
+     <li class='itemize'>Group Cancellation</li></ul>
+<!-- l. 29 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='sources'><a id='x2-10000'></a>Sources</h5>
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+   <h4 class='likesubsectionHead' id='abelian-group'><a id='x2-11000'></a>Abelian Group</h4>
+<p><a id='x2-11000doc'></a>
+</p><!-- l. 2 --><p class='noindent'>A <a href='#x2-3000doc'>1.1<!-- tex4ht:ref: articles:algebra:group-theory:group  --></a> <!-- l. 2 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>G</mi></math> is
+*abelian* iff <!-- l. 2 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∀</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>a</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>b</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>G</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>a</mi> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>b</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>b</mi> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>a</mi></mrow></math>.
+</p><!-- l. 4 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='explanation1'><a id='x2-12000'></a>Explanation</h5>
+<!-- l. 6 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='proofs1'><a id='x2-13000'></a>Proof(s)</h5>
+<!-- l. 8 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='history1'><a id='x2-14000'></a>History</h5>
+<!-- l. 10 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='applications1'><a id='x2-15000'></a>Applications</h5>
+<!-- l. 12 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='dependencies1'><a id='x2-16000'></a>Dependencies</h5>
+     <ul class='itemize1'>
+     <li class='itemize'><a href='#x2-3000doc'>1.1<!-- tex4ht:ref: articles:algebra:group-theory:group  --></a></li></ul>
+<!-- l. 16 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='dependents1'><a id='x2-17000'></a>Dependents</h5>
+<!-- l. 18 --><p class='noindent'>
+</p>
+   <h5 class='likesubsubsectionHead' id='sources1'><a id='x2-18000'></a>Sources</h5>
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+    
+</body> 
+</html>
